@@ -1,0 +1,167 @@
+<!-- Survey form dsc task week 5 -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Mental Health Awareness Survey Form</h1>
+    <p id="description" class="description text-center">
+      Let us know what views and ideas you have on mental health
+      <br>
+      Enter a few details about yourself
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Enter your age"
+      />
+    </div>
+    <div class="form-group">
+      <p align:center>Please answer a few of these questions
+                  <br> Note:There is no right or wrong answer!</p>
+      <p>Is medication the best treatment for Mental Health?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="op3">I'm not sure</option>
+        
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>People should self-diagnose and work out their own problems</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="agree"
+          type="radio"
+          class="input-radio"
+          checked
+        />Agree</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="disagree"
+          type="radio"
+          class="input-radio"
+        />Disagree</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+
+    <div class="form-group">
+      <p>
+        Which group of people are more susceptible to Mental Health problems?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Females"
+          type="checkbox"
+          class="input-checkbox"
+        />Females</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Males"
+          type="checkbox"
+          class="input-checkbox"
+        />Males</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Children_Teenagers"
+          type="checkbox"
+          class="input-checkbox"
+        />Children/Teenagers</label
+      >
+     
+      <label
+        ><input
+          name="prefer"
+          value="Violent_and_dangerous"
+          type="checkbox"
+          class="input-checkbox"
+        />Violent and dangerous people</label>
+      <label><input
+          name="prefer"
+          value="Shy_and_quiet"
+          type="checkbox"
+          class="input-checkbox"
+        />Shy and quiet people</label>
+      <label>
+        <input
+          name="prefer"
+          value="Anyone"
+          type="checkbox"
+          class="input-checkbox" 
+               />Anyone</label>
+      
+    </div>
+
+    <div class="form-group">
+      <p>What are your views on Mental Health?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your opinion here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+  
+  
+
